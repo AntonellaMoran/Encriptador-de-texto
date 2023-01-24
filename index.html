@@ -1,0 +1,66 @@
+<!--Las "llaves" de encriptación que utilizaremos son las siguientes:
+
+La letra "e" es convertida para "enter"
+La letra "i" es convertida para "imes"
+La letra "a" es convertida para "ai"
+La letra "o" es convertida para "ober"
+La letra "u" es convertida para "ufat"
+
+Requisitos:
+- Debe funcionar solo con letras minúsculas
+- No deben ser utilizados letras con acentos ni caracteres especiales
+- Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--verlo en moviles-->
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+        
+        <title>Encriptador</title>
+    </head>
+
+    <body>
+        <header> <!--logo-->
+            <div>
+                <img src="imagenes/Logo.blanco.png" alt="Logo Alura" class="logo">
+            </div>
+        </header>
+
+        <main>
+            <section> <!--entrada de texto-->
+                <textarea class="cuadroEntrada" cols="35" rows="1" placeholder="Ingrese el texto aqui."></textarea>
+
+                <div> <!--letras pequeñas de tener en cuenta-->
+                    <p class="requisitos">Solo letras minúsculas y sin tildes.</p>
+                </div>
+
+                <div class="botones"> <!--botones de entrada de texto-->
+                    <button class="botonEncriptar" onclick="btEncriptar()" >Encriptar</button>
+                    <button class="botonDesencriptar" onclick="btDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+
+            <section> <!--mensaje-->
+                <textarea class="cuadroSalida" cols="23" rows="11"></textarea>
+
+                <div> <!--boton de copiar-->
+                    <button class="botonCopiar">Copiar</button>
+                </div> 
+            </section> 
+
+        </main>
+
+        <footer> <!--pie de página-->
+            <p class="firma">Antonella Moran - 2023</p>        
+            
+        </footer>
+
+    <script src="/script.js"></script>  
+    </body>
+
+</html>

@@ -1,0 +1,119 @@
+*
+{
+    background: #2B303E; /*color de fondo*/
+    font-family: 'Arvo';
+}
+
+.logo
+{
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+
+main
+{
+    display: flex;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+.cuadroEntrada
+{
+    background: black;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    line-height: 150px;
+    margin-top: 9px;
+    text-transform: lowercase;
+    font-size: 40px;   
+    padding: 30px;
+}
+
+.cuadroEntrada:focus
+{
+    outline:none;
+}
+
+.requisitos /*informacion*/
+{
+    color: gray;
+    font-size: 18px;
+    line-height:50px;
+}
+
+.cuadroSalida
+{
+    background: black;
+    background-image: url("imagenes/Muñeco.png");
+    background-repeat: no-repeat; /*para que no se repitan como mosaico la imagen*/
+    border:none; /*el borde del cuadro*/
+    border-radius: 20px;
+    color:white;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 9px;
+    padding: 30px;
+    position: fixed; /*el boton copiar este abajito*/
+}
+
+.cuadroSalida:focus
+{
+    outline:none;
+}
+
+.botones
+{
+    display: flex;
+    margin-top: 18px;
+    margin-left: 50px;
+}
+
+.botonEncriptar
+{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    font-size: 28px;
+}
+
+.botonDesencriptar
+{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    font-size: 28px;
+}
+
+.botonCopiar
+{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 80px;
+    margin-top: 370px;
+    position: absolute;
+    width: 280px; /*ancho*/
+    font-size: 28px;
+    position: fixed;
+}
+
+.firma
+{
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+}
